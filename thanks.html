@@ -36,13 +36,19 @@
 <body class="font-sans text-gray-700 antialiased bg-gradient-to-b from-brand-light to-white min-h-screen flex flex-col">
 
     <nav class="w-full py-6">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center md:justify-start">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
                 <img class="h-12 w-auto mr-3" src="assets/logo-transp-bg.webp" alt="AccelerateEdu Logo">
                 <div>
                     <h1 class="text-2xl font-bold text-brand-dark tracking-tight">AccelerateEdu</h1>
                 </div>
             </a>
+
+            <div class="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm">
+                <button onclick="setLanguage('en')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">EN</button>
+                <span class="text-gray-300">|</span>
+                <button onclick="setLanguage('id')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">ID</button>
+            </div>
         </div>
     </nav>
 
@@ -60,16 +66,16 @@
                 </div>
             </div>
 
-            <h2 class="text-3xl font-bold text-brand-dark mb-4">Message Received! 🚀</h2>
-            <p class="text-gray-600 mb-8 text-lg">
+            <h2 class="text-3xl font-bold text-brand-dark mb-4" data-translate="thanks_title">Message Received! 🚀</h2>
+            <p class="text-gray-600 mb-8 text-lg" data-translate="thanks_desc">
                 Thank you for reaching out to AccelerateEdu. We have received your inquiry and a member of our team will contact you shortly to schedule your consultation.
             </p>
 
             <div class="space-y-4">
-                <a href="index.html" class="block w-full px-8 py-4 bg-brand-primary text-white rounded-xl font-bold hover:bg-blue-600 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                <a href="index.html" class="block w-full px-8 py-4 bg-brand-primary text-white rounded-xl font-bold hover:bg-blue-600 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1" data-translate="btn_home">
                     Back to Homepage
                 </a>
-                <a href="mailto:acceleratemyedu@gmail.com" class="block text-sm text-gray-500 hover:text-brand-primary font-medium transition">
+                <a href="mailto:acceleratemyedu@gmail.com" class="block text-sm text-gray-500 hover:text-brand-primary font-medium transition" data-translate="btn_email">
                     Need immediate assistance? Email us directly.
                 </a>
             </div>
@@ -82,5 +88,31 @@
         </div>
     </footer>
 
+    <script>
+        const translations = {
+            en: {
+                thanks_title: "Message Received! 🚀",
+                thanks_desc: "Thank you for reaching out to AccelerateEdu. We have received your inquiry and a member of our team will contact you shortly to schedule your consultation.",
+                btn_home: "Back to Homepage",
+                btn_email: "Need immediate assistance? Email us directly."
+            },
+            id: {
+                thanks_title: "Pesan Diterima! 🚀",
+                thanks_desc: "Terima kasih telah menghubungi AccelerateEdu. Kami telah menerima pertanyaan Anda dan tim kami akan segera menghubungi Anda untuk menjadwalkan konsultasi.",
+                btn_home: "Kembali ke Beranda",
+                btn_email: "Butuh bantuan segera? Email kami langsung."
+            }
+        };
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.innerText = translations[lang][key];
+                }
+            });
+        }
+    </script>
 </body>
 </html>

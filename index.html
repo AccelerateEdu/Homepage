@@ -55,18 +55,25 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <img class="h-12 w-auto mr-3" src="assets/logo-transp-bg.webp" alt="AccelerateMyEdu Logo">
+                    <img class="h-12 w-auto mr-3" src="assets/logo-transp-bg.webp" alt="AccelerateEdu Logo">
                     <div>
                         <h1 class="text-2xl font-bold text-brand-dark tracking-tight">AccelerateEdu</h1>
-                        <p class="text-xs text-brand-primary font-medium uppercase tracking-widest">Learn to Elevate</p>
+                        <p class="text-xs text-brand-primary font-medium uppercase tracking-widest" data-translate="slogan">Learn to Elevate</p>
                     </div>
                 </div>
 
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#home" class="text-gray-600 hover:text-brand-primary font-medium transition">Home</a>
-                    <a href="#curriculum" class="text-gray-600 hover:text-brand-primary font-medium transition">Curriculums</a>
-                    <a href="#about" class="text-gray-600 hover:text-brand-primary font-medium transition">About</a>
-                    <a href="#contact" class="px-6 py-2.5 bg-brand-primary text-white rounded-full font-semibold hover:bg-blue-600 transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    <a href="#home" class="text-gray-600 hover:text-brand-primary font-medium transition" data-translate="nav_home">Home</a>
+                    <a href="#curriculum" class="text-gray-600 hover:text-brand-primary font-medium transition" data-translate="nav_curriculum">Curriculums</a>
+                    <a href="#about" class="text-gray-600 hover:text-brand-primary font-medium transition" data-translate="nav_about">About</a>
+                    
+                    <div class="flex items-center space-x-2 border-l pl-6 border-gray-300">
+                        <button onclick="setLanguage('en')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">EN</button>
+                        <span class="text-gray-300">|</span>
+                        <button onclick="setLanguage('id')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">ID</button>
+                    </div>
+
+                    <a href="#contact" class="px-6 py-2.5 bg-brand-primary text-white rounded-full font-semibold hover:bg-blue-600 transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5" data-translate="nav_contact">
                         Get Started
                     </a>
                 </div>
@@ -83,10 +90,17 @@
 
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
             <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
-                <a href="#home" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50">Home</a>
-                <a href="#curriculum" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50">Curriculums</a>
-                <a href="#about" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50">About</a>
-                <a href="#contact" class="block mt-4 px-5 py-3 bg-brand-primary text-center text-white rounded-lg font-bold">Get Started</a>
+                <a href="#home" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50" data-translate="nav_home">Home</a>
+                <a href="#curriculum" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50" data-translate="nav_curriculum">Curriculums</a>
+                <a href="#about" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50" data-translate="nav_about">About</a>
+                
+                <div class="flex items-center space-x-4 px-3 py-3">
+                    <button onclick="setLanguage('en')" class="text-base font-bold text-gray-600 hover:text-brand-primary">English</button>
+                    <span class="text-gray-300">|</span>
+                    <button onclick="setLanguage('id')" class="text-base font-bold text-gray-600 hover:text-brand-primary">Bahasa Indonesia</button>
+                </div>
+
+                <a href="#contact" class="block mt-4 px-5 py-3 bg-brand-primary text-center text-white rounded-lg font-bold" data-translate="nav_contact">Get Started</a>
             </div>
         </div>
     </nav>
@@ -98,20 +112,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="text-center lg:text-left animate-fade-in-up">
-                    <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-brand-primary text-sm font-bold mb-4">
+                    <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-brand-primary text-sm font-bold mb-4" data-translate="hero_badge">
                         🚀 Launch Your Potential
                     </span>
                     <h1 class="text-5xl lg:text-7xl font-bold text-brand-dark mb-6 leading-tight">
-                        Learn to <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-blue-700">Elevate.</span>
+                        <span data-translate="hero_title_1">Learn to</span> <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-blue-700" data-translate="hero_title_2">Elevate.</span>
                     </h1>
-                    <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                    <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0" data-translate="hero_desc">
                         Expert tutoring for Cambridge, IB, and Indonesian curriculums. We don't just teach subjects; we accelerate academic growth.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#contact" class="px-8 py-4 bg-brand-dark text-white rounded-lg font-bold hover:bg-gray-800 transition shadow-lg text-lg">
+                        <a href="#contact" class="px-8 py-4 bg-brand-dark text-white rounded-lg font-bold hover:bg-gray-800 transition shadow-lg text-lg" data-translate="hero_btn_trial">
                             Book a Free Trial
                         </a>
-                        <a href="#curriculum" class="px-8 py-4 bg-white text-brand-dark border border-gray-200 rounded-lg font-bold hover:bg-gray-50 transition shadow-sm text-lg">
+                        <a href="#curriculum" class="px-8 py-4 bg-white text-brand-dark border border-gray-200 rounded-lg font-bold hover:bg-gray-50 transition shadow-sm text-lg" data-translate="hero_btn_explore">
                             Explore Programs
                         </a>
                     </div>
@@ -132,19 +146,19 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
                     <div class="text-4xl font-bold text-brand-primary">100%</div>
-                    <div class="text-sm text-gray-500 mt-1">Pass Rate</div>
+                    <div class="text-sm text-gray-500 mt-1" data-translate="stat_pass">Pass Rate</div>
                 </div>
                 <div>
                     <div class="text-4xl font-bold text-brand-primary">50+</div>
-                    <div class="text-sm text-gray-500 mt-1">Expert Tutors</div>
+                    <div class="text-sm text-gray-500 mt-1" data-translate="stat_tutors">Expert Tutors</div>
                 </div>
                 <div>
                     <div class="text-4xl font-bold text-brand-primary">3</div>
-                    <div class="text-sm text-gray-500 mt-1">Major Curriculums</div>
+                    <div class="text-sm text-gray-500 mt-1" data-translate="stat_curr">Major Curriculums</div>
                 </div>
                 <div>
                     <div class="text-4xl font-bold text-brand-primary">A*</div>
-                    <div class="text-sm text-gray-500 mt-1">Average Grade</div>
+                    <div class="text-sm text-gray-500 mt-1" data-translate="stat_grade">Average Grade</div>
                 </div>
             </div>
         </div>
@@ -153,9 +167,9 @@
     <section id="curriculum" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-brand-primary font-bold tracking-wide uppercase text-sm mb-2">Our Programs</h2>
-                <h3 class="text-3xl md:text-4xl font-bold text-brand-dark">Tailored Learning Paths</h3>
-                <p class="mt-4 text-gray-600 text-lg">Whether you are aiming for top global universities or excelling in national exams, we have the roadmap.</p>
+                <h2 class="text-brand-primary font-bold tracking-wide uppercase text-sm mb-2" data-translate="prog_title">Our Programs</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-brand-dark" data-translate="prog_headline">Tailored Learning Paths</h3>
+                <p class="mt-4 text-gray-600 text-lg" data-translate="prog_desc">Whether you are aiming for top global universities or excelling in national exams, we have the roadmap.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -163,79 +177,80 @@
                     <div class="h-14 w-14 bg-red-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <span class="text-2xl">🇬🇧</span>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Cambridge Curriculum</h4>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                    <h4 class="text-xl font-bold text-gray-900 mb-3" data-translate="card_cam_title">Cambridge Curriculum</h4>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed" data-translate="card_cam_desc">
                         Comprehensive preparation for international standards. Focusing on critical thinking and deep subject knowledge.
                     </p>
                     <ul class="space-y-2 mb-8">
                         <li class="flex items-center text-sm text-gray-700">
                             <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            IGCSE (O Level)
+                            <span data-translate="card_cam_li1">IGCSE (O Level)</span>
                         </li>
                         <li class="flex items-center text-sm text-gray-700">
                             <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            AS & A Levels
+                            <span data-translate="card_cam_li2">AS & A Levels</span>
                         </li>
                         <li class="flex items-center text-sm text-gray-700">
                             <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            Checkpoint Exams
+                            <span data-translate="card_cam_li3">Checkpoint Exams</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="text-red-500 font-semibold hover:text-red-600 flex items-center">Learn More <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
+                    <a href="#contact" class="text-red-500 font-semibold hover:text-red-600 flex items-center"><span data-translate="card_learn_more">Learn More</span> <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border-t-4 border-blue-500 group">
                     <div class="h-14 w-14 bg-blue-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <span class="text-2xl">🌍</span>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">IB Curriculum</h4>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                    <h4 class="text-xl font-bold text-gray-900 mb-3" data-translate="card_ib_title">IB Curriculum</h4>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed" data-translate="card_ib_desc">
                         Inquiry-based learning designed to develop inquiring, knowledgeable and caring young people.
                     </p>
                     <ul class="space-y-2 mb-8">
                         <li class="flex items-center text-sm text-gray-700">
                             <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            PYP (Primary Years)
+                            <span data-translate="card_ib_li1">PYP (Primary Years)</span>
                         </li>
                         <li class="flex items-center text-sm text-gray-700">
                             <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            MYP (Middle Years)
+                            <span data-translate="card_ib_li2">MYP (Middle Years)</span>
                         </li>
                         <li class="flex items-center text-sm text-gray-700">
                             <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            DP (Diploma Program)
+                            <span data-translate="card_ib_li3">DP (Diploma Program)</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="text-blue-500 font-semibold hover:text-blue-600 flex items-center">Learn More <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
+                    <a href="#contact" class="text-blue-500 font-semibold hover:text-blue-600 flex items-center"><span data-translate="card_learn_more">Learn More</span> <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition duration-300 border-t-4 border-brand-accent group">
                     <div class="h-14 w-14 bg-yellow-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <span class="text-2xl">🇮🇩</span>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-900 mb-3">Indonesian Curriculum</h4>
-                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                    <h4 class="text-xl font-bold text-gray-900 mb-3" data-translate="card_indo_title">Indonesian Curriculum</h4>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed" data-translate="card_indo_desc">
                         Mastering the national standards (Kurikulum Merdeka / 2013) with modern pedagogical approaches.
                     </p>
                     <ul class="space-y-2 mb-8">
                         <li class="flex items-center text-sm text-gray-700">
                             <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            SD (Elementary)
+                            <span data-translate="card_indo_li1">SD (Elementary)</span>
                         </li>
                         <li class="flex items-center text-sm text-gray-700">
                             <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            SMP (Junior High)
+                            <span data-translate="card_indo_li2">SMP (Junior High)</span>
                         </li>
                         <li class="flex items-center text-sm text-gray-700">
                             <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            SMA (Senior High)
+                            <span data-translate="card_indo_li3">SMA (Senior High)</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="text-yellow-600 font-semibold hover:text-yellow-700 flex items-center">Learn More <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
+                    <a href="#contact" class="text-yellow-600 font-semibold hover:text-yellow-700 flex items-center"><span data-translate="card_learn_more">Learn More</span> <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
                 </div>
             </div>
         </div>
     </section>
+    
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-16">
@@ -243,7 +258,7 @@
                     <img src="assets/student_gmeet.webp" alt="Students Learning" class="rounded-3xl shadow-2xl">
                 </div>
                 <div class="lg:w-1/2">
-                    <h2 class="text-3xl font-bold text-brand-dark mb-6">Why AccelerateEdu?</h2>
+                    <h2 class="text-3xl font-bold text-brand-dark mb-6" data-translate="about_title">Why AccelerateEdu?</h2>
                     <div class="space-y-6">
                         <div class="flex">
                             <div class="flex-shrink-0">
@@ -252,8 +267,8 @@
                                 </div>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-lg leading-6 font-medium text-gray-900">Customized Methodology</h3>
-                                <p class="mt-2 text-base text-gray-500">We adapt to the student's learning style. No cookie-cutter lessons here.</p>
+                                <h3 class="text-lg leading-6 font-medium text-gray-900" data-translate="about_feat1_title">Customized Methodology</h3>
+                                <p class="mt-2 text-base text-gray-500" data-translate="about_feat1_desc">We adapt to the student's learning style. No cookie-cutter lessons here.</p>
                             </div>
                         </div>
 
@@ -264,8 +279,8 @@
                                 </div>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-lg leading-6 font-medium text-gray-900">Flexible Scheduling</h3>
-                                <p class="mt-2 text-base text-gray-500">Book sessions that fit your busy life. Online or in-person options available.</p>
+                                <h3 class="text-lg leading-6 font-medium text-gray-900" data-translate="about_feat2_title">Flexible Scheduling</h3>
+                                <p class="mt-2 text-base text-gray-500" data-translate="about_feat2_desc">Book sessions that fit your busy life. Online or in-person options available.</p>
                             </div>
                         </div>
 
@@ -276,8 +291,8 @@
                                 </div>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-lg leading-6 font-medium text-gray-900">Proven Results</h3>
-                                <p class="mt-2 text-base text-gray-500">From improving grades to passing entrance exams, our track record speaks for itself.</p>
+                                <h3 class="text-lg leading-6 font-medium text-gray-900" data-translate="about_feat3_title">Proven Results</h3>
+                                <p class="mt-2 text-base text-gray-500" data-translate="about_feat3_desc">From improving grades to passing entrance exams, our track record speaks for itself.</p>
                             </div>
                         </div>
                     </div>
@@ -285,15 +300,16 @@
             </div>
         </div>
     </section>
-<section id="contact" class="py-20 bg-brand-dark text-white relative overflow-hidden">
+
+    <section id="contact" class="py-20 bg-brand-dark text-white relative overflow-hidden">
         <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-10 -mt-10"></div>
         <div class="absolute bottom-0 left-0 w-48 h-48 bg-brand-accent opacity-10 rounded-full -ml-10 -mb-10"></div>
 
         <div class="max-w-4xl mx-auto px-4 relative z-10">
             <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
                 <div class="text-center mb-10">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Ready to Elevate?</h2>
-                    <p class="text-gray-600">Fill out the form below to schedule your free consultation.</p>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4" data-translate="contact_title">Ready to Elevate?</h2>
+                    <p class="text-gray-600" data-translate="contact_desc">Fill out the form below to schedule your free consultation.</p>
                 </div>
 
                 <form action="https://formsubmit.co/acceleratemyedu@gmail.com" method="POST" class="space-y-6 text-gray-800">
@@ -305,18 +321,18 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">Student Name</label>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-translate="form_name">Student Name</label>
                             <input type="text" name="student_name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition" placeholder="John Doe">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">Parent Name</label>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-translate="form_parent">Parent Name</label>
                             <input type="text" name="parent_name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition" placeholder="Jane Doe">
                         </div>
                     </div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">Curriculum Interest</label>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-translate="form_curr">Curriculum Interest</label>
                             <select name="curriculum" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition bg-white">
                                 <option value="Cambridge">Cambridge (IGCSE/A-Level)</option>
                                 <option value="IB">IB (PYP/MYP/DP)</option>
@@ -325,23 +341,24 @@
                             </select>
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <label class="block text-sm font-medium text-gray-700 mb-1" data-translate="form_phone">Phone Number</label>
                             <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition" placeholder="+62 812...">
                         </div>
                     </div>
 
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-translate="form_msg">Message</label>
                         <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary focus:border-transparent outline-none transition" placeholder="Tell us about your learning goals..."></textarea>
                     </div>
 
-                    <button type="submit" class="w-full bg-brand-primary text-white font-bold py-4 rounded-lg hover:bg-blue-600 transition duration-300 shadow-md transform hover:-translate-y-1">
+                    <button type="submit" class="w-full bg-brand-primary text-white font-bold py-4 rounded-lg hover:bg-blue-600 transition duration-300 shadow-md transform hover:-translate-y-1" data-translate="form_btn">
                         Send Message 🚀
                     </button>
                 </form>
             </div>
         </div>
     </section>
+
     <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center mb-4 md:mb-0">
@@ -385,6 +402,138 @@
                 nav.classList.remove('shadow-md');
             }
         });
+
+        // LANGUAGE SWITCHER LOGIC
+        const translations = {
+            en: {
+                slogan: "Learn to Elevate",
+                nav_home: "Home",
+                nav_curriculum: "Curriculums",
+                nav_about: "About",
+                nav_contact: "Get Started",
+                
+                hero_badge: "🚀 Launch Your Potential",
+                hero_title_1: "Learn to",
+                hero_title_2: "Elevate.",
+                hero_desc: "Expert tutoring for Cambridge, IB, and Indonesian curriculums. We don't just teach subjects; we accelerate academic growth.",
+                hero_btn_trial: "Book a Free Trial",
+                hero_btn_explore: "Explore Programs",
+                
+                stat_pass: "Pass Rate",
+                stat_tutors: "Expert Tutors",
+                stat_curr: "Major Curriculums",
+                stat_grade: "Average Grade",
+
+                prog_title: "OUR PROGRAMS",
+                prog_headline: "Tailored Learning Paths",
+                prog_desc: "Whether you are aiming for top global universities or excelling in national exams, we have the roadmap.",
+                
+                card_cam_title: "Cambridge Curriculum",
+                card_cam_desc: "Comprehensive preparation for international standards. Focusing on critical thinking and deep subject knowledge.",
+                card_cam_li1: "IGCSE (O Level)",
+                card_cam_li2: "AS & A Levels",
+                card_cam_li3: "Checkpoint Exams",
+                
+                card_ib_title: "IB Curriculum",
+                card_ib_desc: "Inquiry-based learning designed to develop inquiring, knowledgeable and caring young people.",
+                card_ib_li1: "PYP (Primary Years)",
+                card_ib_li2: "MYP (Middle Years)",
+                card_ib_li3: "DP (Diploma Program)",
+                
+                card_indo_title: "Indonesian Curriculum",
+                card_indo_desc: "Mastering the national standards (Kurikulum Merdeka / 2013) with modern pedagogical approaches.",
+                card_indo_li1: "SD (Elementary)",
+                card_indo_li2: "SMP (Junior High)",
+                card_indo_li3: "SMA (Senior High)",
+                card_learn_more: "Learn More",
+                
+                about_title: "Why AccelerateEdu?",
+                about_feat1_title: "Customized Methodology",
+                about_feat1_desc: "We adapt to the student's learning style. No cookie-cutter lessons here.",
+                about_feat2_title: "Flexible Scheduling",
+                about_feat2_desc: "Book sessions that fit your busy life. Online or in-person options available.",
+                about_feat3_title: "Proven Results",
+                about_feat3_desc: "From improving grades to passing entrance exams, our track record speaks for itself.",
+
+                contact_title: "Ready to Elevate?",
+                contact_desc: "Fill out the form below to schedule your free consultation.",
+                form_name: "Student Name",
+                form_parent: "Parent Name",
+                form_curr: "Curriculum Interest",
+                form_phone: "Phone Number",
+                form_msg: "Message",
+                form_btn: "Send Message 🚀"
+            },
+            id: {
+                slogan: "Belajar Lebih Tinggi",
+                nav_home: "Beranda",
+                nav_curriculum: "Kurikulum",
+                nav_about: "Tentang Kami",
+                nav_contact: "Mulai Sekarang",
+                
+                hero_badge: "🚀 Raih Potensi Maksimal",
+                hero_title_1: "Belajar untuk",
+                hero_title_2: "Lebih Tinggi.",
+                hero_desc: "Bimbingan belajar ahli untuk kurikulum Cambridge, IB, dan Nasional. Kami tidak hanya mengajar; kami mempercepat prestasi akademik.",
+                hero_btn_trial: "Coba Gratis",
+                hero_btn_explore: "Lihat Program",
+                
+                stat_pass: "Tingkat Kelulusan",
+                stat_tutors: "Tutor Ahli",
+                stat_curr: "Kurikulum Utama",
+                stat_grade: "Rata-rata Nilai",
+
+                prog_title: "PROGRAM KAMI",
+                prog_headline: "Jalur Belajar Khusus",
+                prog_desc: "Baik untuk persiapan universitas global atau ujian nasional, kami memiliki peta jalan menuju sukses.",
+                
+                card_cam_title: "Kurikulum Cambridge",
+                card_cam_desc: "Persiapan komprehensif standar internasional. Fokus pada berpikir kritis dan pemahaman materi yang mendalam.",
+                card_cam_li1: "IGCSE (O Level)",
+                card_cam_li2: "AS & A Levels",
+                card_cam_li3: "Ujian Checkpoint",
+                
+                card_ib_title: "Kurikulum IB",
+                card_ib_desc: "Pembelajaran berbasis inkuiri untuk membentuk siswa yang berwawasan luas dan peduli.",
+                card_ib_li1: "PYP (Tingkat SD)",
+                card_ib_li2: "MYP (Tingkat SMP)",
+                card_ib_li3: "DP (Program Diploma)",
+                
+                card_indo_title: "Kurikulum Nasional",
+                card_indo_desc: "Menguasai standar nasional (Kurikulum Merdeka / 2013) dengan pendekatan pedagogis modern.",
+                card_indo_li1: "SD (Sekolah Dasar)",
+                card_indo_li2: "SMP (Sekolah Menengah Pertama)",
+                card_indo_li3: "SMA (Sekolah Menengah Atas)",
+                card_learn_more: "Pelajari Lebih Lanjut",
+                
+                about_title: "Mengapa AccelerateEdu?",
+                about_feat1_title: "Metodologi Khusus",
+                about_feat1_desc: "Kami beradaptasi dengan gaya belajar siswa. Tidak ada pelajaran yang kaku di sini.",
+                about_feat2_title: "Jadwal Fleksibel",
+                about_feat2_desc: "Pesan sesi yang sesuai dengan kesibukan Anda. Tersedia pilihan online atau tatap muka.",
+                about_feat3_title: "Hasil Terbukti",
+                about_feat3_desc: "Dari meningkatkan nilai hingga lulus ujian masuk, rekam jejak kami berbicara sendiri.",
+
+                contact_title: "Siap Berprestasi?",
+                contact_desc: "Isi formulir di bawah ini untuk menjadwalkan konsultasi gratis Anda.",
+                form_name: "Nama Siswa",
+                form_parent: "Nama Orang Tua",
+                form_curr: "Minat Kurikulum",
+                form_phone: "Nomor WhatsApp/HP",
+                form_msg: "Pesan Tambahan",
+                form_btn: "Kirim Pesan 🚀"
+            }
+        };
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.innerText = translations[lang][key];
+                }
+            });
+        }
     </script>
 </body>
 </html>
