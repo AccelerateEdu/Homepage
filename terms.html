@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | AccelerateMyEdu</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#2d3748',
+                            light: '#e0f2fe',
+                            accent: '#f59e0b',
+                            primary: '#0ea5e9'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50 min-h-screen flex flex-col">
+
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center group">
+                    <svg class="w-5 h-5 text-gray-500 group-hover:text-brand-primary transition mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    <span class="font-bold text-brand-dark group-hover:text-brand-primary transition">AccelerateMyEdu</span>
+                </a>
+
+                <div class="flex items-center space-x-2 bg-gray-100 px-3 py-1.5 rounded-full">
+                    <button onclick="setLanguage('en')" class="text-xs font-bold hover:text-brand-primary transition focus:text-brand-primary">EN</button>
+                    <span class="text-gray-300">|</span>
+                    <button onclick="setLanguage('id')" class="text-xs font-bold hover:text-brand-primary transition focus:text-brand-primary">ID</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-sm p-8 md:p-12 border border-gray-100">
+            
+            <h1 class="text-3xl font-bold text-brand-dark mb-2" data-translate="title">Terms of Service</h1>
+            <p class="text-sm text-gray-500 mb-8 italic"><span data-translate="last_updated">Last Updated:</span> February 14, 2026</p>
+
+            <div class="space-y-8">
+                <section>
+                    <p class="leading-relaxed text-gray-600" data-translate="intro">
+                        Welcome to AccelerateMyEdu. By accessing our website and using our tutoring services, you agree to comply with and be bound by the following terms and conditions.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-3" data-translate="sec1_title">1. Educational Services</h2>
+                    <p class="mb-3 text-gray-600" data-translate="sec1_desc">
+                        AccelerateMyEdu provides tutoring services for Cambridge (IGCSE/A-Level), IB (PYP/MYP/DP), and Indonesian National Curriculums. While we strive to provide the highest quality education, we cannot guarantee specific grades or exam results, as student performance depends on many factors.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-3" data-translate="sec2_title">2. Scheduling & Cancellations</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600 ml-2">
+                        <li data-translate="sec2_li1"><strong>Booking:</strong> All sessions must be scheduled in advance.</li>
+                        <li data-translate="sec2_li2"><strong>Cancellation Policy:</strong> We require at least <span class="font-bold text-brand-primary">24 hours notice</span> for any cancellation or rescheduling.</li>
+                        <li data-translate="sec2_li3"><strong>Late Cancellations:</strong> Sessions cancelled with less than 24 hours notice will be charged at the full rate to compensate the tutor's time.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-3" data-translate="sec3_title">3. Payments</h2>
+                    <p class="text-gray-600" data-translate="sec3_desc">
+                        Payment for tutoring packages or individual sessions must be made in accordance with the invoice provided. We accept bank transfers. Failure to pay by the due date may result in the suspension of services.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-3" data-translate="sec4_title">4. Student Conduct</h2>
+                    <p class="text-gray-600" data-translate="sec4_desc">
+                        Students are expected to be respectful to tutors and prepared for their lessons. AccelerateMyEdu reserves the right to terminate services for any student who displays inappropriate behavior.
+                    </p>
+                </section>
+
+                <section class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <h2 class="text-xl font-bold text-brand-dark mb-3" data-translate="sec5_title">5. Contact Information</h2>
+                    <p class="text-gray-600 mb-2" data-translate="sec5_desc">For questions regarding these Terms, please contact us at:</p>
+                    <a href="mailto:acceleratemyedu@gmail.com" class="text-brand-primary font-bold hover:underline">acceleratemyedu@gmail.com</a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-12 py-8">
+        <div class="max-w-4xl mx-auto px-4 text-center text-sm text-gray-400">
+            &copy; 2026 AccelerateMyEdu. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                title: "Terms of Service",
+                last_updated: "Last Updated:",
+                intro: "Welcome to AccelerateMyEdu. By accessing our website and using our tutoring services, you agree to comply with and be bound by the following terms and conditions.",
+                
+                sec1_title: "1. Educational Services",
+                sec1_desc: "AccelerateMyEdu provides tutoring services for Cambridge (IGCSE/A-Level), IB (PYP/MYP/DP), and Indonesian National Curriculums. While we strive to provide the highest quality education, we cannot guarantee specific grades or exam results, as student performance depends on many factors.",
+
+                sec2_title: "2. Scheduling & Cancellations",
+                sec2_li1: "<strong>Booking:</strong> All sessions must be scheduled in advance.",
+                sec2_li2: "<strong>Cancellation Policy:</strong> We require at least <span class='font-bold text-brand-primary'>24 hours notice</span> for any cancellation or rescheduling.",
+                sec2_li3: "<strong>Late Cancellations:</strong> Sessions cancelled with less than 24 hours notice will be charged at the full rate to compensate the tutor's time.",
+
+                sec3_title: "3. Payments",
+                sec3_desc: "Payment for tutoring packages or individual sessions must be made in accordance with the invoice provided. We accept bank transfers. Failure to pay by the due date may result in the suspension of services.",
+
+                sec4_title: "4. Student Conduct",
+                sec4_desc: "Students are expected to be respectful to tutors and prepared for their lessons. AccelerateMyEdu reserves the right to terminate services for any student who displays inappropriate behavior.",
+
+                sec5_title: "5. Contact Information",
+                sec5_desc: "For questions regarding these Terms, please contact us at:"
+            },
+            id: {
+                title: "Syarat dan Ketentuan",
+                last_updated: "Terakhir Diperbarui:",
+                intro: "Selamat datang di AccelerateMyEdu. Dengan mengakses situs web kami dan menggunakan layanan bimbingan kami, Anda setuju untuk mematuhi dan terikat oleh syarat dan ketentuan berikut.",
+                
+                sec1_title: "1. Layanan Pendidikan",
+                sec1_desc: "AccelerateMyEdu menyediakan layanan bimbingan belajar untuk kurikulum Cambridge (IGCSE/A-Level), IB (PYP/MYP/DP), dan Kurikulum Nasional Indonesia. Meskipun kami berupaya memberikan pendidikan berkualitas tertinggi, kami tidak dapat menjamin nilai atau hasil ujian tertentu, karena kinerja siswa bergantung pada banyak faktor.",
+
+                sec2_title: "2. Penjadwalan & Pembatalan",
+                sec2_li1: "<strong>Pemesanan:</strong> Semua sesi harus dijadwalkan sebelumnya.",
+                sec2_li2: "<strong>Kebijakan Pembatalan:</strong> Kami mewajibkan pemberitahuan setidaknya <span class='font-bold text-brand-primary'>24 jam</span> untuk pembatalan atau penjadwalan ulang.",
+                sec2_li3: "<strong>Pembatalan Terlambat:</strong> Sesi yang dibatalkan dengan pemberitahuan kurang dari 24 jam akan dikenakan biaya penuh sebagai kompensasi waktu tutor.",
+
+                sec3_title: "3. Pembayaran",
+                sec3_desc: "Pembayaran untuk paket bimbingan belajar atau sesi individu harus dilakukan sesuai dengan faktur yang diberikan. Kami menerima transfer bank. Kegagalan membayar pada tanggal jatuh tempo dapat mengakibatkan penangguhan layanan.",
+
+                sec4_title: "4. Perilaku Siswa",
+                sec4_desc: "Siswa diharapkan bersikap sopan kepada tutor dan siap untuk mengikuti pelajaran. AccelerateMyEdu berhak menghentikan layanan bagi siswa yang menunjukkan perilaku yang tidak pantas.",
+
+                sec5_title: "5. Informasi Kontak",
+                sec5_desc: "Untuk pertanyaan mengenai Syarat ini, silakan hubungi kami di:"
+            }
+        };
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    // Use innerHTML to preserve bold tags inside translations
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
