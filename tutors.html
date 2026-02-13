@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Tutors & Stories | AccelerateEdu</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#2d3748',
+                            light: '#e0f2fe',
+                            accent: '#f59e0b',
+                            primary: '#0ea5e9'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50 min-h-screen flex flex-col">
+
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center group">
+                    <img class="h-10 w-auto mr-3" src="assets/logo-transp-bg.webp" alt="Logo">
+                    <span class="font-bold text-brand-dark text-xl group-hover:text-brand-primary transition">AccelerateEdu</span>
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-primary font-medium transition" data-translate="nav_home">Home</a>
+                    <a href="tutors.html" class="text-brand-primary font-bold transition" data-translate="nav_tutors">Tutors & Stories</a>
+                    
+                    <div class="flex items-center space-x-2 border-l pl-6 border-gray-300">
+                        <button onclick="setLanguage('en')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">EN</button>
+                        <span class="text-gray-300">|</span>
+                        <button onclick="setLanguage('id')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">ID</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-brand-dark text-white py-16 text-center px-4 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-10 -mt-10"></div>
+        <div class="relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-translate="page_title">Meet Our Experts</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-translate="page_desc">Experienced educators dedicated to your success.</p>
+        </div>
+    </header>
+
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-primary">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Mr. Suta</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Physics & Math</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_suta">10+ years teaching IGCSE, MYP Science, AS/A Level and IB Diploma Physics.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-accent">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Mrs. Ayuk Ratna</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Biology</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_ayuk">Experienced in Biology and Teaching Pedagogy.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-primary">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Mrs. Riana Ayu</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Economy</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_riana">Experienced Ekonomi Teacher.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-accent">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Mrs. Pipit Palgunadi</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Mathematics</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_pipit">Experienced Matematika Teacher.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-primary">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Mr. Krisna</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Science & Chemistry</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_krisna">Many years of experience teaching MYP Science and IB DP Chemistry.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-accent">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Mrs. Cintya</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Biology</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_cintya">15+ years teaching MYP Science and IB DP Biology.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-primary">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Mrs. Fenty Gultom</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Economics</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_fenty">Experienced Economics Teacher in both Cambridge and IB.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-accent">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Sensei Yulia</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Japanese</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_yulia">Outstanding Japanese Teacher.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-primary">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Ms. Wawa</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Primary & Reading</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_wawa">Experienced teacher in Calistung, Reading and SD Teacher.</p>
+            </div>
+
+             <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-accent">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Mrs. Lesty</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Chemistry</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_lesty">Experienced Chemistry Teacher in both Cambridge and IB.</p>
+            </div>
+
+             <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-primary">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Mr. Alit</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">Mathematics</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_alit">Experienced Mathematics Teacher in both Cambridge and IB.</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition border-t-4 border-brand-accent">
+                <div class="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                    <svg class="w-full h-full text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                </div>
+                <h3 class="text-lg font-bold text-center text-gray-900">Mr. Wage Myartawan</h3>
+                <p class="text-brand-primary text-xs font-bold text-center uppercase mb-3">English</p>
+                <p class="text-sm text-gray-600 text-center leading-snug" data-translate="bio_wage">English Lecturer and Researcher at Ganesha University of Education.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-white py-16 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-brand-dark mb-12" data-translate="testi_title">What Students Are Saying</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100">
+                    <div class="text-brand-primary text-4xl mb-4 font-serif">“</div>
+                    <p class="text-gray-700 italic mb-6 text-lg" data-translate="review_1">I learned with fun with the tutors who taught me Science and Math. It brought a lot of confidence in me.</p>
+                    <div class="flex items-center">
+                        <div class="ml-0">
+                            <h4 class="font-bold text-brand-dark">Dava</h4>
+                            <p class="text-sm text-gray-500">Grade 7, Regent School Bali</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 p-8 rounded-2xl border border-yellow-100">
+                    <div class="text-brand-accent text-4xl mb-4 font-serif">“</div>
+                    <p class="text-gray-700 italic mb-6 text-lg" data-translate="review_2">The tutors are very caring and helpful. Every concept was taught carefully until I fully understood them.</p>
+                    <div class="flex items-center">
+                        <div class="ml-0">
+                            <h4 class="font-bold text-brand-dark">Davina</h4>
+                            <p class="text-sm text-gray-500">Grade 10, ACS Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                    <div class="text-brand-dark text-4xl mb-4 font-serif">“</div>
+                    <p class="text-gray-700 italic mb-6 text-lg" data-translate="review_3">The tutors definitely are superb in terms of teaching concepts and problem solving. I passed my IB exams with ease.</p>
+                    <div class="flex items-center">
+                        <div class="ml-0">
+                            <h4 class="font-bold text-brand-dark">Kaira</h4>
+                            <p class="text-sm text-gray-500">Grade 12, Bali Int'l School</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100">
+                    <div class="text-brand-primary text-4xl mb-4 font-serif">“</div>
+                    <p class="text-gray-700 italic mb-6 text-lg" data-translate="review_4">Preparing for Cambridge A Level examination had brought anxiety to me. The tutors here definitely supported me so that I succeeded my exams.</p>
+                    <div class="flex items-center">
+                        <div class="ml-0">
+                            <h4 class="font-bold text-brand-dark">Kimi</h4>
+                            <p class="text-sm text-gray-500">Grade 11, Mentari School Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+            &copy; 2026 AccelerateEdu. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                nav_home: "Home",
+                nav_tutors: "Tutors & Stories",
+                page_title: "Meet Our Experts",
+                page_desc: "Experienced educators dedicated to your success.",
+                testi_title: "What Students Are Saying",
+                
+                // Bios
+                bio_suta: "10+ years teaching IGCSE, MYP Science, AS/A Level and IB Diploma Physics.",
+                bio_ayuk: "Experienced in Biology and Teaching Pedagogy.",
+                bio_riana: "Experienced Economy Teacher.",
+                bio_pipit: "Experienced Mathematics Teacher.",
+                bio_krisna: "Many years of experience teaching MYP Science and IB DP Chemistry.",
+                bio_cintya: "15+ years teaching MYP Science and IB DP Biology.",
+                bio_fenty: "Experienced Economics Teacher in both Cambridge and IB.",
+                bio_yulia: "Outstanding Japanese Teacher.",
+                bio_wawa: "Experienced teacher in Calistung, Reading and SD Teacher.",
+                bio_lesty: "Experienced Chemistry Teacher in both Cambridge and IB.",
+                bio_alit: "Experienced Mathematics Teacher in both Cambridge and IB.",
+                bio_wage: "English Lecturer and Researcher at Ganesha University of Education.",
+
+                // Reviews
+                review_1: "I learned with fun with the tutors who taught me Science and Math. It brought a lot of confidence in me.",
+                review_2: "The tutors are very caring and helpful. Every concept was taught carefully until I fully understood them.",
+                review_3: "The tutors definitely are superb in terms of teaching concepts and problem solving. I passed my IB exams with ease.",
+                review_4: "Preparing for Cambridge A Level examination had brought anxiety to me. The tutors here definitely supported me so that I succeeded my exams."
+            },
+            id: {
+                nav_home: "Beranda",
+                nav_tutors: "Tutor & Kisah Sukses",
+                page_title: "Temui Para Ahli",
+                page_desc: "Pendidik berpengalaman yang didedikasikan untuk kesuksesan Anda.",
+                testi_title: "Apa Kata Siswa",
+                
+                // Bios (Translated)
+                bio_suta: "10+ tahun mengajar IGCSE, MYP Science, AS/A Level dan IB Diploma Fisika.",
+                bio_ayuk: "Berpengalaman dalam Biologi dan Pedagogi Pengajaran.",
+                bio_riana: "Guru Ekonomi Berpengalaman.",
+                bio_pipit: "Guru Matematika Berpengalaman.",
+                bio_krisna: "Berpengalaman bertahun-tahun mengajar MYP Science dan IB DP Kimia.",
+                bio_cintya: "15+ tahun mengajar MYP Science dan IB DP Biologi.",
+                bio_fenty: "Guru Ekonomi berpengalaman di kurikulum Cambridge dan IB.",
+                bio_yulia: "Guru Bahasa Jepang yang luar biasa.",
+                bio_wawa: "Guru berpengalaman dalam Calistung, Membaca, dan Guru SD.",
+                bio_lesty: "Guru Kimia berpengalaman di kurikulum Cambridge dan IB.",
+                bio_alit: "Guru Matematika berpengalaman di kurikulum Cambridge dan IB.",
+                bio_wage: "Dosen Bahasa Inggris dan Peneliti di Universitas Pendidikan Ganesha.",
+
+                // Reviews (Translated)
+                review_1: "Saya belajar dengan menyenangkan bersama tutor Sains dan Matematika. Ini memberi saya rasa percaya diri yang tinggi.",
+                review_2: "Tutornya sangat peduli dan membantu. Setiap konsep diajarkan dengan hati-hati sampai saya benar-benar memahaminya.",
+                review_3: "Tutornya sangat hebat dalam mengajarkan konsep dan pemecahan masalah. Saya lulus ujian IB dengan mudah.",
+                review_4: "Persiapan ujian Cambridge A Level sempat membuat saya cemas. Tutor di sini sangat mendukung sehingga saya berhasil dalam ujian."
+            }
+        };
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.innerText = translations[lang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
