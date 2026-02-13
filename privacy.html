@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | AccelerateEdu</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#2d3748',
+                            light: '#e0f2fe',
+                            accent: '#f59e0b',
+                            primary: '#0ea5e9'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50 min-h-screen flex flex-col">
+
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center group">
+                    <svg class="w-5 h-5 text-gray-500 group-hover:text-brand-primary transition mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    <span class="font-bold text-brand-dark group-hover:text-brand-primary transition">AccelerateEdu</span>
+                </a>
+
+                <div class="flex items-center space-x-2 bg-gray-100 px-3 py-1.5 rounded-full">
+                    <button onclick="setLanguage('en')" class="text-xs font-bold hover:text-brand-primary transition focus:text-brand-primary">EN</button>
+                    <span class="text-gray-300">|</span>
+                    <button onclick="setLanguage('id')" class="text-xs font-bold hover:text-brand-primary transition focus:text-brand-primary">ID</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-sm p-8 md:p-12 border border-gray-100">
+            
+            <h1 class="text-3xl font-bold text-brand-dark mb-2" data-translate="title">Privacy Policy</h1>
+            <p class="text-sm text-gray-500 mb-8 italic"><span data-translate="effective_date">Effective Date:</span> February 14, 2026</p>
+
+            <div class="space-y-8">
+                <section>
+                    <p class="leading-relaxed text-gray-600" data-translate="intro">
+                        At AccelerateEdu, we respect your privacy and are committed to protecting the personal information you share with us. This policy explains what information we collect and how we use it.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-3" data-translate="sec1_title">1. Information We Collect</h2>
+                    <p class="mb-3 text-gray-600" data-translate="sec1_desc">We collect information that you voluntarily provide to us when you fill out our contact forms or enroll in our tutoring programs. This includes:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600 ml-2">
+                        <li data-translate="sec1_li1">Names (Student and Parent/Guardian)</li>
+                        <li data-translate="sec1_li2">Contact Information (Email address and Phone number)</li>
+                        <li data-translate="sec1_li3">Educational Details (Current grade, school, and curriculum interest)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-3" data-translate="sec2_title">2. How We Use Your Information</h2>
+                    <p class="mb-3 text-gray-600" data-translate="sec2_desc">We use your information solely for the following purposes:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600 ml-2">
+                        <li data-translate="sec2_li1">To respond to your inquiries and schedule consultations.</li>
+                        <li data-translate="sec2_li2">To customize our tutoring services to your needs.</li>
+                        <li data-translate="sec2_li3">To communicate progress updates and schedule changes.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-dark mb-3" data-translate="sec3_title">3. Data Protection</h2>
+                    <p class="text-gray-600" data-translate="sec3_desc">
+                        We do not sell, trade, or rent your personal identification information to others. We implement appropriate security measures to protect your personal information against unauthorized access or disclosure.
+                    </p>
+                </section>
+
+                <section class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <h2 class="text-xl font-bold text-brand-dark mb-3" data-translate="sec4_title">4. Contact Us</h2>
+                    <p class="text-gray-600 mb-2" data-translate="sec4_desc">If you have any questions about this Privacy Policy, please contact us at:</p>
+                    <a href="mailto:acceleratemyedu@gmail.com" class="text-brand-primary font-bold hover:underline">acceleratemyedu@gmail.com</a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-12 py-8">
+        <div class="max-w-4xl mx-auto px-4 text-center text-sm text-gray-400">
+            &copy; 2026 AccelerateEdu. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                title: "Privacy Policy",
+                effective_date: "Effective Date:",
+                intro: "At AccelerateEdu, we respect your privacy and are committed to protecting the personal information you share with us. This policy explains what information we collect and how we use it.",
+                
+                sec1_title: "1. Information We Collect",
+                sec1_desc: "We collect information that you voluntarily provide to us when you fill out our contact forms or enroll in our tutoring programs. This includes:",
+                sec1_li1: "Names (Student and Parent/Guardian)",
+                sec1_li2: "Contact Information (Email address and Phone number)",
+                sec1_li3: "Educational Details (Current grade, school, and curriculum interest)",
+
+                sec2_title: "2. How We Use Your Information",
+                sec2_desc: "We use your information solely for the following purposes:",
+                sec2_li1: "To respond to your inquiries and schedule consultations.",
+                sec2_li2: "To customize our tutoring services to your needs.",
+                sec2_li3: "To communicate progress updates and schedule changes.",
+
+                sec3_title: "3. Data Protection",
+                sec3_desc: "We do not sell, trade, or rent your personal identification information to others. We implement appropriate security measures to protect your personal information against unauthorized access or disclosure.",
+
+                sec4_title: "4. Contact Us",
+                sec4_desc: "If you have any questions about this Privacy Policy, please contact us at:"
+            },
+            id: {
+                title: "Kebijakan Privasi",
+                effective_date: "Tanggal Berlaku:",
+                intro: "Di AccelerateEdu, kami menghargai privasi Anda dan berkomitmen untuk melindungi informasi pribadi yang Anda bagikan kepada kami. Kebijakan ini menjelaskan informasi apa yang kami kumpulkan dan bagaimana kami menggunakannya.",
+                
+                sec1_title: "1. Informasi yang Kami Kumpulkan",
+                sec1_desc: "Kami mengumpulkan informasi yang Anda berikan secara sukarela saat mengisi formulir kontak atau mendaftar program bimbingan kami. Ini meliputi:",
+                sec1_li1: "Nama (Siswa dan Orang Tua/Wali)",
+                sec1_li2: "Informasi Kontak (Alamat email dan Nomor telepon)",
+                sec1_li3: "Detail Pendidikan (Kelas saat ini, sekolah, dan minat kurikulum)",
+
+                sec2_title: "2. Cara Kami Menggunakan Informasi Anda",
+                sec2_desc: "Kami menggunakan informasi Anda semata-mata untuk tujuan berikut:",
+                sec2_li1: "Untuk menanggapi pertanyaan Anda dan menjadwalkan konsultasi.",
+                sec2_li2: "Untuk menyesuaikan layanan bimbingan kami dengan kebutuhan Anda.",
+                sec2_li3: "Untuk mengomunikasikan perkembangan belajar dan perubahan jadwal.",
+
+                sec3_title: "3. Perlindungan Data",
+                sec3_desc: "Kami tidak menjual, memperdagangkan, atau menyewakan informasi identitas pribadi Anda kepada pihak lain. Kami menerapkan langkah keamanan yang tepat untuk melindungi informasi pribadi Anda dari akses atau pengungkapan yang tidak sah.",
+
+                sec4_title: "4. Hubungi Kami",
+                sec4_desc: "Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami di:"
+            }
+        };
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.innerText = translations[lang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
