@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | AccelerateEdu</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#2d3748',
+                            light: '#e0f2fe',
+                            accent: '#f59e0b',
+                            primary: '#0ea5e9'
+                        }
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gradient-to-b from-brand-light to-white min-h-screen flex flex-col">
+
+    <nav class="w-full py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center md:justify-start">
+            <a href="index.html" class="flex items-center">
+                <img class="h-12 w-auto mr-3" src="assets/logo-transp-bg.webp" alt="AccelerateEdu Logo">
+                <div>
+                    <h1 class="text-2xl font-bold text-brand-dark tracking-tight">AccelerateEdu</h1>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center px-4">
+        <div class="max-w-lg w-full bg-white rounded-3xl shadow-2xl p-8 md:p-12 text-center border-t-4 border-brand-primary relative overflow-hidden">
+            
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 rounded-full bg-blue-50 opacity-50"></div>
+            <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-32 h-32 rounded-full bg-yellow-50 opacity-50"></div>
+
+            <div class="mb-6 relative z-10">
+                <div class="mx-auto h-24 w-24 bg-green-100 rounded-full flex items-center justify-center animate-bounce-slow">
+                    <svg class="h-12 w-12 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+            </div>
+
+            <h2 class="text-3xl font-bold text-brand-dark mb-4">Message Received! 🚀</h2>
+            <p class="text-gray-600 mb-8 text-lg">
+                Thank you for reaching out to AccelerateEdu. We have received your inquiry and a member of our team will contact you shortly to schedule your consultation.
+            </p>
+
+            <div class="space-y-4">
+                <a href="index.html" class="block w-full px-8 py-4 bg-brand-primary text-white rounded-xl font-bold hover:bg-blue-600 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Back to Homepage
+                </a>
+                <a href="mailto:acceleratemyedu@gmail.com" class="block text-sm text-gray-500 hover:text-brand-primary font-medium transition">
+                    Need immediate assistance? Email us directly.
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-dark text-gray-400 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+            &copy; 2023 AccelerateEdu. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
