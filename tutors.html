@@ -54,6 +54,25 @@
 												<button onclick="setLanguage('id')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">ID</button>
 											</div>
 										</div>
+										<div class="md:hidden flex items-center">
+											<button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-primary focus:outline-none">
+												<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+									<div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+										<a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50" data-translate="nav_home">Home</a>
+										<a href="tutors.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50" data-translate="nav_tutors">Tutors & Stories</a>
+										<a href="resources.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md" data-translate="nav_hub">Learning Hub</a>
+										<div class="flex items-center space-x-4 px-3 py-3">
+											<button onclick="setLanguage('en')" class="text-base font-bold text-gray-600 hover:text-brand-primary">English</button>
+											<span class="text-gray-300">|</span>
+											<button onclick="setLanguage('id')" class="text-base font-bold text-gray-600 hover:text-brand-primary">Bahasa Indonesia</button>
+										</div>
 									</div>
 								</div>
 							</nav>
@@ -225,6 +244,20 @@
 																					</div>
 																				</footer>
 																				<script>
+																				// Mobile Menu Toggle
+const btn = document.getElementById('mobile-menu-btn');
+const menu = document.getElementById('mobile-menu');
+
+btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+    });
+});
         const translations = {
             en: {
                 nav_home: "Home",
