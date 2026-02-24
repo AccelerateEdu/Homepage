@@ -40,74 +40,66 @@
             }
         }
 						</script>
+		<style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
 					</head>
 					<body class="font-sans text-gray-700 antialiased bg-gray-50 min-h-screen flex flex-col">
-						<nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
-							<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-								<div class="flex justify-between items-center h-20">
-									<a href="index.html"
-									   class="flex items-center group">
-										<img class="h-10 w-auto mr-3"
-										     src="assets/logo-transp-bg.webp"
-										     alt="Logo">
-											<span class="font-bold text-brand-dark text-xl group-hover:text-brand-primary transition">AccelerateMyEdu</span>
-										</a>
-										<div class="hidden md:flex space-x-8 items-center">
-											<a href="index.html"
-											   class="text-gray-600 hover:text-brand-primary font-medium transition"
-											   data-translate="nav_home">Home</a>
-											<a href="tutors.html"
-											   class="text-gray-600 hover:text-brand-primary font-medium transition"
-											   data-translate="nav_tutors">Tutors & Stories</a>
-											<a href="resources.html"
-											   class="text-gray-600 hover:text-brand-primary font-medium transition"
-											   data-translate="nav_hub">Learning Hub</a>
-											<div class="flex items-center space-x-2 border-l pl-6 border-gray-300">
-												<button onclick="setLanguage('en')"
-												        class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">EN</button>
-												<span class="text-gray-300">|</span>
-												<button onclick="setLanguage('id')"
-												        class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">ID</button>
-											</div>
-										</div>
-										<div class="md:hidden flex items-center">
-											<button id="mobile-menu-btn"
-											        class="text-gray-600 hover:text-brand-primary focus:outline-none">
-												<svg class="h-8 w-8"
-												     fill="none"
-												     viewBox="0 0 24 24"
-												     stroke="currentColor">
-													<path stroke-linecap="round"
-													      stroke-linejoin="round"
-													      stroke-width="2"
-													      d="M4 6h16M4 12h16M4 18h16"/>
-												</svg>
-											</button>
-										</div>
-									</div>
-								</div>
-								<div id="mobile-menu"
-								     class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
-									<div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
-										<a href="index.html"
-										   class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50"
-										   data-translate="nav_home">Home</a>
-										<a href="tutors.html"
-										   class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50"
-										   data-translate="nav_tutors">Tutors & Stories</a>
-										<a href="resources.html"
-										   class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md"
-										   data-translate="nav_hub">Learning Hub</a>
-										<div class="flex items-center space-x-4 px-3 py-3">
-											<button onclick="setLanguage('en')"
-											        class="text-base font-bold text-gray-600 hover:text-brand-primary">English</button>
-											<span class="text-gray-300">|</span>
-											<button onclick="setLanguage('id')"
-											        class="text-base font-bold text-gray-600 hover:text-brand-primary">Bahasa Indonesia</button>
-										</div>
-									</div>
-								</div>
-							</nav>
+						<nav class="sticky top-0 w-full z-50 glass-nav border-b border-gray-100 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                <img class="h-12 w-auto mr-3" src="assets/logo-transp-bg.webp" alt="AccelerateMyEdu Logo">
+                <div>
+                    <h1 class="text-2xl font-bold text-brand-dark tracking-tight group-hover:text-brand-primary transition">AccelerateMyEdu</h1>
+                    <p class="text-xs text-brand-primary font-medium uppercase tracking-widest" data-translate="slogan">Learn to Elevate</p>
+                </div>
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-brand-primary font-medium transition" data-translate="nav_home">Home</a>
+                <a href="tutors.html" class="text-gray-600 hover:text-brand-primary font-medium transition" data-translate="nav_tutors">Tutors & Stories</a>
+                <a href="resources.html" class="text-gray-600 hover:text-brand-primary font-medium transition" data-translate="nav_hub">Learning Hub</a>
+                <div class="flex items-center space-x-2 border-l pl-6 border-gray-300">
+                    <button onclick="setLanguage('en')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">EN</button>
+                    <span class="text-gray-300">|</span>
+                    <button onclick="setLanguage('id')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">ID</button>
+                </div>
+
+                <a href="index.html#contact" class="px-6 py-2.5 bg-brand-primary text-white rounded-full font-semibold hover:bg-blue-600 transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5" data-translate="nav_contact">
+                    Get Started
+                </a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-primary focus:outline-none">
+                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+        <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+            <a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50" data-translate="nav_home">Home</a>
+            <a href="tutors.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50" data-translate="nav_tutors">Tutors & Stories</a>
+            <a href="resources.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md" data-translate="nav_hub">Learning Hub</a>
+            <div class="flex items-center space-x-4 px-3 py-3">
+                <button onclick="setLanguage('en')" class="text-base font-bold text-gray-600 hover:text-brand-primary">English</button>
+                <span class="text-gray-300">|</span>
+                <button onclick="setLanguage('id')" class="text-base font-bold text-gray-600 hover:text-brand-primary">Bahasa Indonesia</button>
+            </div>
+
+            <a href="index.html#contact" class="block mt-4 px-5 py-3 bg-brand-primary text-center text-white rounded-lg font-bold" data-translate="nav_contact">Get Started</a>
+        </div>
+    </div>
+</nav>
 							<header class="bg-brand-dark text-white py-16 text-center px-4 relative overflow-hidden">
 								<div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-10 -mt-10"/>
 								<div class="relative z-10">
@@ -336,9 +328,20 @@ document.querySelectorAll('#mobile-menu a').forEach(link => {
         menu.classList.add('hidden');
     });
 });
+// Sticky Navbar Shadow effect
+window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 10) {
+        nav.classList.add('shadow-md');
+    } else {
+        nav.classList.remove('shadow-md');
+    }
+});
         const translations = {
             en: {
-                nav_home: "Home",
+                slogan: "Learn to Elevate",
+        		nav_contact: "Get Started",
+				nav_home: "Home",
                 nav_tutors: "Tutors & Stories",
                 nav_hub: "Learning Hub",
                 page_title: "Meet Our Experts",
@@ -367,7 +370,9 @@ document.querySelectorAll('#mobile-menu a').forEach(link => {
                 review_4: "Preparing for Cambridge A Level examination had brought anxiety to me. The tutors here definitely supported me so that I succeeded my exams."
             },
             id: {
-                nav_home: "Beranda",
+                slogan: "Belajar Lebih Tinggi",
+        		nav_contact: "Mulai Sekarang",
+				nav_home: "Beranda",
                 nav_tutors: "Tutor & Kisah Sukses",
                 nav_hub: "Pusat Belajar",
                 page_title: "Temui Para Ahli",
