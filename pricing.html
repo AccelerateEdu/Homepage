@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKSQD82WBF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MKSQD82WBF');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing & Packages | AccelerateMyEdu</title>
+    <meta name="description" content="Transparent pricing and tutoring packages for Cambridge IGCSE, IB Diploma, National Curriculum, and Language Mastery.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'], },
+                    colors: {
+                        brand: {
+                            dark: '#2d3748',
+                            light: '#e0f2fe',
+                            accent: '#f59e0b',
+                            primary: '#0ea5e9'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50 min-h-screen flex flex-col">
+    
+    <nav class="sticky top-0 w-full z-50 glass-nav border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <img class="h-12 w-auto mr-3" src="assets/logo-transp-bg.webp" alt="AccelerateMyEdu Logo">
+                    <div>
+                        <h1 class="text-2xl font-bold text-brand-dark tracking-tight group-hover:text-brand-primary transition">AccelerateMyEdu</h1>
+                        <p class="text-xs text-brand-primary font-medium uppercase tracking-widest" data-translate="slogan">Learn to Elevate</p>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-600 hover:text-brand-primary font-medium transition" data-translate="nav_home">Home</a>
+                    <a href="tutors.html" class="text-gray-600 hover:text-brand-primary font-medium transition" data-translate="nav_tutors">Tutors & Stories</a>
+                    <a href="resources.html" class="text-gray-600 hover:text-brand-primary font-medium transition" data-translate="nav_hub">Learning Hub</a>
+                    <a href="pricing.html" class="text-brand-primary font-bold transition" data-translate="nav_pricing">Pricing</a>
+                    
+                    <div class="flex items-center space-x-2 border-l pl-6 border-gray-300">
+                        <button onclick="setLanguage('en')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">EN</button>
+                        <span class="text-gray-300">|</span>
+                        <button onclick="setLanguage('id')" class="text-sm font-bold hover:text-brand-primary transition focus:text-brand-primary">ID</button>
+                    </div>
+
+                    <a href="index.html#contact" class="px-6 py-2.5 bg-brand-primary text-white rounded-full font-semibold hover:bg-blue-600 transition shadow-lg hover:shadow-xl transform hover:-translate-y-0.5" data-translate="nav_contact">
+                        Get Started
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-primary focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-4 pt-2 pb-6 space-y-2 shadow-lg">
+                <a href="index.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50" data-translate="nav_home">Home</a>
+                <a href="tutors.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50" data-translate="nav_tutors">Tutors & Stories</a>
+                <a href="resources.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-gray-50 rounded-md" data-translate="nav_hub">Learning Hub</a>
+                <a href="pricing.html" class="block px-3 py-2 text-base font-medium text-brand-primary bg-brand-light rounded-md" data-translate="nav_pricing">Pricing</a>
+                
+                <div class="flex items-center space-x-4 px-3 py-3">
+                    <button onclick="setLanguage('en')" class="text-base font-bold text-gray-600 hover:text-brand-primary">English</button>
+                    <span class="text-gray-300">|</span>
+                    <button onclick="setLanguage('id')" class="text-base font-bold text-gray-600 hover:text-brand-primary">Bahasa Indonesia</button>
+                </div>
+
+                <a href="index.html#contact" class="block mt-4 px-5 py-3 bg-brand-primary text-center text-white rounded-lg font-bold" data-translate="nav_contact">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-brand-dark text-white py-16 text-center px-4 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-10 -mt-10"></div>
+        <div class="relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-translate="page_title">Investment in Excellence</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto" data-translate="page_desc">Transparent, premium tutoring packages designed for academic growth.</p>
+        </div>
+    </header>
+
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            
+            <div class="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col h-full">
+                <h3 class="text-2xl font-bold text-brand-dark mb-2" data-translate="tier1_title">The Booster Plan</h3>
+                <p class="text-gray-500 text-sm mb-6" data-translate="tier1_desc">Perfect for students needing support in a single subject to maintain top grades.</p>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold text-gray-900">Rp 1.4M</span>
+                    <span class="text-gray-500">/mo</span>
+                </div>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm" data-translate="tier1_feat1">4 Private Sessions (1hr each)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm" data-translate="tier1_feat2">1 Dedicated Subject Area</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm" data-translate="tier1_feat3">Monthly Progress Report via WA</span>
+                    </li>
+                </ul>
+                <a href="index.html#contact" class="w-full block text-center bg-gray-100 hover:bg-gray-200 text-brand-dark font-bold py-3 rounded-lg transition" data-translate="btn_select">Select Plan</a>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-2xl p-8 border-2 border-brand-primary transform md:-translate-y-4 relative flex flex-col h-full z-10">
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-brand-accent text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider shadow-md" data-translate="badge_popular">
+                    Most Popular
+                </div>
+                <h3 class="text-2xl font-bold text-brand-dark mb-2" data-translate="tier2_title">The Excellence Plan</h3>
+                <p class="text-gray-500 text-sm mb-6" data-translate="tier2_desc">The ultimate package for mastering multiple subjects or intensive weekly learning.</p>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold text-brand-primary">Rp 2.6M</span>
+                    <span class="text-gray-500">/mo</span>
+                </div>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-brand-primary mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm font-semibold" data-translate="tier2_feat1">8 Private Sessions (1hr each)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-brand-primary mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm" data-translate="tier2_feat2">Split across 2 or 3 subjects</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-brand-primary mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm" data-translate="tier2_feat3">Priority scheduling & flexibility</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-brand-primary mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm" data-translate="tier2_feat4">Weekly updates & tailored learning roadmap</span>
+                    </li>
+                </ul>
+                <a href="index.html#contact" class="w-full block text-center bg-brand-primary hover:bg-blue-600 text-white font-bold py-3 rounded-lg shadow-md transition transform hover:-translate-y-1" data-translate="btn_select">Select Plan</a>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-xl transition duration-300 flex flex-col h-full">
+                <h3 class="text-2xl font-bold text-brand-dark mb-2" data-translate="tier3_title">Exam Bootcamp</h3>
+                <p class="text-gray-500 text-sm mb-6" data-translate="tier3_desc">Rigorous, focused preparation for Cambridge, IB, or National final exams.</p>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold text-gray-900">Rp 3.5M</span>
+                    <span class="text-gray-500">/pkg</span>
+                </div>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm" data-translate="tier3_feat1">10 Intensive Sessions</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm" data-translate="tier3_feat2">Past paper grading & analysis</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm" data-translate="tier3_feat3">Mock exams with detailed feedback</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-2 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-gray-700 text-sm" data-translate="tier3_feat4">Exam technique & time management coaching</span>
+                    </li>
+                </ul>
+                <a href="index.html#contact" class="w-full block text-center bg-gray-100 hover:bg-gray-200 text-brand-dark font-bold py-3 rounded-lg transition" data-translate="btn_select">Select Plan</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-brand-light border-y border-blue-100 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-8 rounded-xl shadow-sm flex items-center border-l-4 border-yellow-400">
+                    <div class="h-16 w-16 bg-yellow-100 rounded-full flex items-center justify-center mr-6 shrink-0">
+                        <span class="text-3xl">👥</span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-1" data-translate="group_title">Small Group Tuition</h4>
+                        <p class="text-gray-600 text-sm mb-2" data-translate="group_desc">Cost-effective learning for 2-4 students sharing a tutor. Perfect for siblings or classmates.</p>
+                        <p class="text-brand-primary font-bold">Rp 200.000 <span class="text-sm font-normal text-gray-500" data-translate="per_student">/student per session</span></p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm flex items-center border-l-4 border-brand-primary">
+                    <div class="h-16 w-16 bg-blue-100 rounded-full flex items-center justify-center mr-6 shrink-0">
+                        <span class="text-3xl">💼</span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-1" data-translate="corp_title">Corporate Language Mastery</h4>
+                        <p class="text-gray-600 text-sm mb-2" data-translate="corp_desc">English, Japanese, or Mandarin training for professionals and company teams.</p>
+                        <p class="text-brand-primary font-bold" data-translate="corp_price">Customized Group Rates Available</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            &copy; 2026 AccelerateMyEdu. All rights reserved. | <a href="index.html" class="hover:text-white">Home</a>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Sticky Navbar Shadow effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+
+        const translations = {
+            en: {
+                slogan: "Learn to Elevate",
+                nav_contact: "Get Started",
+                nav_home: "Home",
+                nav_tutors: "Tutors & Stories",
+                nav_hub: "Learning Hub",
+                nav_pricing: "Pricing",
+                
+                page_title: "Investment in Excellence",
+                page_desc: "Transparent, premium tutoring packages designed for academic growth.",
+                
+                tier1_title: "The Booster Plan",
+                tier1_desc: "Perfect for students needing support in a single subject to maintain top grades.",
+                tier1_feat1: "4 Private Sessions (1hr each)",
+                tier1_feat2: "1 Dedicated Subject Area",
+                tier1_feat3: "Monthly Progress Report via WA",
+                
+                badge_popular: "Most Popular",
+                tier2_title: "The Excellence Plan",
+                tier2_desc: "The ultimate package for mastering multiple subjects or intensive weekly learning.",
+                tier2_feat1: "8 Private Sessions (1hr each)",
+                tier2_feat2: "Split across 2 or 3 subjects",
+                tier2_feat3: "Priority scheduling & flexibility",
+                tier2_feat4: "Weekly updates & tailored learning roadmap",
+                
+                tier3_title: "Exam Bootcamp",
+                tier3_desc: "Rigorous, focused preparation for Cambridge, IB, or National final exams.",
+                tier3_feat1: "10 Intensive Sessions",
+                tier3_feat2: "Past paper grading & analysis",
+                tier3_feat3: "Mock exams with detailed feedback",
+                tier3_feat4: "Exam technique & time management coaching",
+                
+                btn_select: "Select Plan",
+                
+                group_title: "Small Group Tuition",
+                group_desc: "Cost-effective learning for 2-4 students sharing a tutor. Perfect for siblings or classmates.",
+                per_student: "/student per session",
+                
+                corp_title: "Corporate Language Mastery",
+                corp_desc: "English, Japanese, or Mandarin training for professionals and company teams.",
+                corp_price: "Customized Group Rates Available"
+            },
+            id: {
+                slogan: "Belajar Lebih Tinggi",
+                nav_contact: "Mulai Sekarang",
+                nav_home: "Beranda",
+                nav_tutors: "Tutor & Kisah",
+                nav_hub: "Pusat Belajar",
+                nav_pricing: "Harga",
+                
+                page_title: "Investasi Pendidikan",
+                page_desc: "Paket bimbingan belajar premium dan transparan yang dirancang untuk pertumbuhan akademik.",
+                
+                tier1_title: "Paket Booster",
+                tier1_desc: "Sempurna untuk siswa yang membutuhkan dukungan dalam satu mata pelajaran untuk mempertahankan nilai.",
+                tier1_feat1: "4 Sesi Privat (1 jam/sesi)",
+                tier1_feat2: "Fokus 1 Mata Pelajaran",
+                tier1_feat3: "Laporan Kemajuan Bulanan via WA",
+                
+                badge_popular: "Paling Populer",
+                tier2_title: "Paket Excellence",
+                tier2_desc: "Paket ideal untuk menguasai beberapa mata pelajaran atau pembelajaran mingguan intensif.",
+                tier2_feat1: "8 Sesi Privat (1 jam/sesi)",
+                tier2_feat2: "Bisa dibagi untuk 2 atau 3 mata pelajaran",
+                tier2_feat3: "Prioritas jadwal & fleksibilitas",
+                tier2_feat4: "Laporan mingguan & rencana belajar khusus",
+                
+                tier3_title: "Bootcamp Ujian",
+                tier3_desc: "Persiapan yang ketat dan fokus untuk ujian akhir Cambridge, IB, atau Nasional.",
+                tier3_feat1: "10 Sesi Intensif",
+                tier3_feat2: "Analisis & penilaian soal tahun lalu",
+                tier3_feat3: "Ujian simulasi (Mock test) dengan evaluasi",
+                tier3_feat4: "Pelatihan teknik ujian & manajemen waktu",
+                
+                btn_select: "Pilih Paket",
+                
+                group_title: "Belajar Kelompok Kecil",
+                group_desc: "Pembelajaran hemat untuk 2-4 siswa dengan satu tutor. Cocok untuk kakak beradik atau teman sekelas.",
+                per_student: "/siswa per sesi",
+                
+                corp_title: "Pelatihan Bahasa Perusahaan",
+                corp_desc: "Pelatihan Bahasa Inggris, Jepang, atau Mandarin untuk profesional dan tim perusahaan.",
+                corp_price: "Tersedia Harga Khusus Grup"
+            }
+        };
+
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.innerText = translations[lang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
